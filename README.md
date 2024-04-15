@@ -1,4 +1,4 @@
-# Shopify Theme Name
+# IW Technologies Theme
 
 This is a custom Shopify theme for IW Technologies in Elgin, IL.
 
