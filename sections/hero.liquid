@@ -1,5 +1,5 @@
 <div class="hero-image section">
-    <img src="">
+    <img src="{{ section.settings.image }}">
 </div>
 
 {% schema %}
@@ -10,6 +10,12 @@
             "type": "image_picker",
             "id": "image",
             "label": "Image"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero image",
+            "category": "Image"
         }
     ]
 }
