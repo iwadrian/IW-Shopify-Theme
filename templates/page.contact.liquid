@@ -1,14 +1,52 @@
-<h1>{{ page.title }}</h1>
-{% form 'contact' %}
-  {% if form.posted_successfully? %} Thank you for your contact {% endif %}
-  {{ form.errors | default_errors }}
-  <label for="ContactFormName">name</label>
-  <input type="text" id="ContactFormName" name="contact[name]">
-  <label for="ContactFormEmail">email</label>
-  <input type="email" id="ContactFormEmail" name="contact[email]">
-  <label for="ContactFormPhone">phone</label>
-  <input type="tel" id="ContactFormPhone" name="contact[phone]">
-  <label for="ContactFormMessage">message</label>
-  <textarea rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
-  <input type="submit" value="send">
-{% endform %}
+<div class="contact-form-title flex">
+  <div class = "contact-title-heading flex">
+    <h3> Get in Touch </h3>
+  </div> 
+  <p class = "contact-title-sub"> Fill out the form below or call (847) 310-4200 to see how we can partner together.</p>
+</div>
+
+<div class="contact-container flex">
+  <div class="contact-form">
+
+    {% form 'contact' %}
+    {% if form.posted_successfully? %} Thank you for your contact {% endif %}
+    {{ form.errors | default_errors }}
+    <div class="form-field flex"> 
+      <label for="ContactFormName">Name</label>
+      <input type="text" id="ContactFormName" name="contact[name]">
+    </div>
+    <div class="form-field flex">  
+      <label for="ContactFormEmail">Email</label>
+      <input type="email" id="ContactFormEmail" name="contact[email]">
+    </div>
+    <div class="form-field flex">  
+      <label for="ContactFormPhone">Phone</label>
+      <input type="tel" id="ContactFormPhone" name="contact[phone]">
+    </div>
+    <div class="form-field flex"> 
+      <label for="ContactFormMessage">Message</label>
+      <textarea rows="10" id="ContactFormMessage" name="contact[body]"></textarea>
+    </div>
+    <input class="form-button" type="submit" value="send">
+    {% endform %}
+  </div>
+  <div class="contact-side-info flex"> 
+    <div class="contact-info"> 
+      <p>Our Headquarters</p>
+      <p>IW Technologies</p>
+      <p>2790 Pinnacle Drive</p>
+      <p>Elgin, IL 60124-7943</p>
+      <p>Phone: (847)310-4200</p>
+      <p>Fax: (847)310-8490</p>
+      <div class="social-icons"> 
+        <a href="https://www.linkedin.com/company/iw-technologies" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/LinkedIn.jpg" alt="" title="LinkedIn" class="wp-image-267"></a>
+        <a href="https://www.facebook.com/IWTechnologies/" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Facebook.jpg" alt="" title="Facebook" class="wp-image-266"></a>
+        <a href="https://www.youtube.com/user/illinoiswholesale/videos" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Youtube.jpg" alt="" title="Youtube" class="wp-image-265"></a>
+      </div>
+    </div>
+    <div class="contact-map">
+      <img src="https://cdn.shopify.com/s/files/1/0692/7381/3217/files/IW-google-maps.jpg?v=1712608928" fetchpriority="high" decoding="async" width="273" height="224"  alt="IW Google Maps Location" title="Google Maps">
+    </div>
+  </div>
+
+</div>
