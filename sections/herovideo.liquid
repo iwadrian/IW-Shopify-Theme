@@ -1,0 +1,24 @@
+<div class="hero-video section">
+    <video loop="loop" autoplay="" playsinline="" muted="" id="" preload="none" style="margin: 0px; width: 1195.53px; height: 672.484px;">
+        <source type="video/mp4" src="{{ section.settings.video | default: "master" }}">  
+    </video>
+</div>
+
+{% schema %}
+{
+    "name": "Hero video",
+    "settings": [
+        {
+            "type": "video",
+            "id": "video",
+            "label": "IW Technologies Hero Video"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Hero video",
+            "category": "Video"
+        }
+    ]
+}
+{% endschema %}

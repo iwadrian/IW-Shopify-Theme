@@ -1,6 +1,24 @@
 {
   "current": "Default",
   "presets": {
-    "Default": { }
+    "Default": {
+      "sections": {
+        "hero": {
+          "type": "hero",
+          "settings": {
+          }
+        },
+        "herovideo": {
+          "type": "herovideo",
+          "settings": {
+            "video": ""
+          }
+        }
+      },
+      "content_for_index": [
+        "hero",
+        "herovideo"
+      ]
+    }
   }
 }
