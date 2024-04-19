@@ -18,8 +18,8 @@
     <div class="product-card-title"> 
       <h3>{{ product.title | upcase }}</h3>
       <p class="product-card-price">{{ product.price | money }}</p>
-      <p class="product-card-sizes">
-        {% for  size_option in product.options_by_name['Size'].values %}
+      <p class="product-card-colors">
+        {% for  size_option in product.options_by_name['Color'].values %}
           {{ size_option }}{% unless forloop.last %},{%  endunless %}
         {% endfor %}
       </p>

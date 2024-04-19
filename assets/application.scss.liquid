@@ -136,6 +136,10 @@ main {
     width: 50%;
 }
 
+*, ::after, ::before {
+    box-sizing: border-box;
+}
+
 /* START HEADER */
 .header {
     position: fixed;
@@ -345,10 +349,14 @@ footer {
 .product-card-title {
     position: relative;
     margin: 16px 0;
+
+    h3 {
+        padding-right: 20px;
+    }
     
     .add-button {
-        width: 18px;
-        height: 18px;
+        width: 20px;
+        height: 20px;
         position: absolute;
         top: 0;
         right: 0;
@@ -383,6 +391,23 @@ footer {
             }
         }
     }
+}
+
+.product-card-title:hover .add-button {
+    color: #FFF;
+    background-color: #0A1258;
+}
+
+.product-card-colors {
+    display: none;
+}
+
+.product-card-title:hover .product-card-price {
+    display: none;
+}
+
+.product-card-title:hover .product-card-colors {
+    display: block;
 }
 
 /* CONTACT PAGE */
