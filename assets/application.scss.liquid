@@ -381,7 +381,7 @@ footer {
 
 .contact-form-title {
     flex-direction: column;
-    height: 14rem;
+    height: 30rem;
     justify-content: center;
 }
 
@@ -392,6 +392,12 @@ footer {
     min-width: 16rem;
     align-items: center;
     clip-path: polygon(0 0, 100% 0, calc(100% - 40px) 100%, 0% 100%);
+    z-index: 20;
+    margin-top: -1rem;
+
+    @include phone{
+        min-width: 19rem;
+    }
 }
 
 // 19 rem when mobile
@@ -428,6 +434,10 @@ footer {
 
 .contact-side-info {
     flex-direction: column;
+
+    @include phone{
+        display: none;
+    }
 }
 
 .contact-info h3 {
@@ -465,6 +475,10 @@ footer {
 .contact-form {
     width: 70%;
     align-items: center;
+
+    @include phone{
+        width: 100%;
+    }
 }
 
 .contact-side-info {
@@ -503,7 +517,12 @@ footer {
         border: none;
         font-size: 18px;
         color: #777777;
-        height: var(--input-height);
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="tel"] {
+        height: 2rem;
     }
 }
 
@@ -644,4 +663,18 @@ footer {
     &:hover {
         background-color: #40E0D0;
     }
+}
+
+/* PAGE BANNER STYLING*/ 
+
+.contact-banner {
+    background-image: url('{{ "contact-splash.jpg" | asset_url }}');
+    
+}
+
+.header-banner {
+    height: 255px;
+    position: relative;
+    background-size: cover;
+    background-position: 50%;
 }
