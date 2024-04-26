@@ -101,7 +101,7 @@ a {
 
 .container,
 .footer,
-.header {
+.header-inner {
     padding : 0 25px;
 }
 
@@ -146,7 +146,7 @@ main {
     top: 0;
     left: 0;
     right: 0;
-    background-color: #0A1258;
+    
     z-index: 10;
 
     @include phone{
@@ -162,7 +162,7 @@ main {
     height: 72px;
     align-items: center;
     border-bottom: 1px solid #0A1258; 
-
+    background-color: #0A1258;
     @include phone{
         display: none;
     }
@@ -671,6 +671,12 @@ footer {
     &:hover {
         background-color: #40E0D0;
     }
+}
+
+/* START MINI CART */
+
+.mini-cart.hidden {
+    transform: translateX(100%)
 }
 
 /* PAGE BANNER STYLING*/ 
