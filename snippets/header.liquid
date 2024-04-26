@@ -24,9 +24,15 @@
 <header class="header" id="header">
     <div class="header-inner flex space-between"> 
         <div class="menu-drawer"> 
+            {% unless template == "product" %}
             <button class="menu-button"> 
                 <span> Menu</span>
             </button>
+            {% else %}
+            <a href="javascript:history.back()" class="menu-button"> 
+              <span>Back</span>
+            </a>
+            {% endunless %}
         </div> 
 
         <a href="/" class="header-logo"><img src="https://cdn.shopify.com/s/files/1/0692/7381/3217/files/IW_logo_e-commerce.svg?v=1712169853" alt="Logo" width="100%"> </a>
@@ -42,9 +48,11 @@
             </button>
         </div>
     </div> 
-    <div class="mini-cart" :class="{ hidden: miniCart }"> 
+    <div class="mini-cart" :class="{ hidden: miniCart }">
+      <button class="mini-cart-close-button" @click=toggleMiniCart>Close</button> 
       {% render 'mini-cart' %}
     </div>
+    <div class="outside" v-if="!miniCart || !menuDrawer" @click="closeAllDrawers"> </div>
 </header>
 
 <script> 
@@ -59,6 +67,38 @@
       methods: {
         toggleMiniCart() {
           toggleMiniCart.openCart()
+        },
+        closeAllDrawers() {
+          toggleClose.closeAll()
+        },
+        decrement(item) {
+          const data = {
+            "id": item.key,
+            "quantity": item.quantity - 1
+          }
+
+          axios.post('/cart/change.js', data)
+            .then(response => {
+              store.getCart()
+            })
+            .catch(error => console.log(error))
+        },
+        increment(item) {
+          const data = {
+            "id": item.key,
+            "quantity": item.quantity + 1
+          }
+
+          axios.post('/cart/change.js', data)
+          .then(response => {
+            store.getCart()
+          })
+          .catch(error => console.log(error))
+
+        },
+        money(value) {
+          if (!value) return 0
+          return "$" + (value/100).toFixed(2)
         }
       },
       computed: {
