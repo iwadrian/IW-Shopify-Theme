@@ -699,6 +699,7 @@ footer {
         content: "";
         width: 100%;
         height: 1000%;
+        // Some hacky CSS to make the full mini-cart bg colored
         position: absolute;
         background-color: #0A1258;
         top: 0;
@@ -748,7 +749,6 @@ footer {
     border-bottom: 1px solid #FFF;
     // height: 100%;
     // overflow: auto;
-
 }
 
 .mini-cart-item {
@@ -758,6 +758,35 @@ footer {
 
 .mini-cart-item-right {
     flex: 1;
+}
+
+.mini-cart-quanity {
+    height: 25px;
+    overflow: hidden;
+    margin-top: 25px;
+    position: relative;
+    border: 1px solid;
+    border-radius: 13px;
+
+    input {
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        line-height: 25px;
+    }
+
+    .mini-cart-quanity-button {
+        width: 25%;
+        position: absolute;
+        top: -4px;
+        bottom: 0;
+        left: 0;
+    }
+
+    .mini-cart-quanity-button:last-of-type {
+        left: auto;
+        right: 0;
+    }
 }
 
 

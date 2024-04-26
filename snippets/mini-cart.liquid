@@ -12,6 +12,11 @@
                         <a :href="item.url"> ${ item.title} </a>
                     </div>
                     <div> ${item.price}</div>
+                    <div class="mini-cart-quantity"> 
+                        <input type="text" v-model="item.quantity" />
+                        <button class="mini-cart-quantity-button">-</button>
+                        <button class="mini-cart-quantity-button">+</button>
+                    </div>
                 </div>
             </div>
         </div>
