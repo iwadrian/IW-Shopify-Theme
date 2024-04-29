@@ -1,0 +1,48 @@
+<div class="rich-text section"> 
+    <h2 class="heading">
+        {{ section.settings.title }} 
+    </h2>
+    <div class="center padding-top"> 
+        {{ section.settings.text }}
+    </div>
+    <a href="{{ section.settings.button_url }}" target="_blank">{{ section.settings.button_label }}</a>
+</div>
+
+{% schema %}
+{
+    "name": "Rich Text",
+    "settings": [
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Section Heading"  
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Description",
+            "default": "<p>Write your descrption here.</p>"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "button_url",
+            "label": "Button Url",
+            "default": "https://weareiw.com"
+        }
+    ],
+    "presets": [
+        {
+            "name":"Rich Text",
+            "category": "Text"
+        }
+    ]
+}
+
+{% endschema %}

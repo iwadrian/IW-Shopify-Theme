@@ -150,6 +150,15 @@ button, input, option, textarea {
     outline: none;
 }
 
+.section {
+    padding: 25px;
+}
+
+img, picture, svg, video {
+    max-width: 100%;
+    vertical-align: middle;
+}
+
 /* START HEADER */
 .header {
     position: fixed;
@@ -871,4 +880,31 @@ footer {
     position: relative;
     background-size: cover;
     background-position: 50%;
+}
+
+/* START HERO SECTION */
+
+.hero-video {
+    @include phone{
+       height: 270px;
+
+       img, video {
+        height: 100%;
+        object-fit: cover;
+       }
+    }
+}
+
+/* START RICH TEXT SECTION */
+
+.heading {
+    font-size: 25px;
+}
+
+.center {
+    text-align: center;
+}
+
+.padding-top {
+    padding-top: 25px;
 }
