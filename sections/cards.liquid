@@ -26,3 +26,75 @@
         </div> 
     </div>
 </div>
+
+{% schema %}
+{
+    "name": "Card Section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "left_image",
+            "label": "Left Card Image"
+        },
+        {
+            "type": "text",
+            "id": "left_title",
+            "label": "Left Card Heading",
+            "default": "Left Heading"  
+        },
+        {
+            "type": "richtext",
+            "id": "left_description",
+            "label": "Left Card Description",
+            "default": "<p>Write your descrption here.</p>"
+        },
+        {
+            "type": "text",
+            "id": "left_button_label",
+            "label": "Left Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "left_button_url",
+            "label": "Left Button Url",
+            "default": "https://weareiw.com"
+        },
+        {
+            "type": "image_picker",
+            "id": "right_image",
+            "label": "Right Card Image"
+        },
+        {
+            "type": "text",
+            "id": "right_title",
+            "label": "Right Card Heading",
+            "default": "Right Heading"  
+        },
+        {
+            "type": "richtext",
+            "id": "right_description",
+            "label": "Right Card Description",
+            "default": "<p>Write your descrption here.</p>"
+        },
+        {
+            "type": "text",
+            "id": "right_button_label",
+            "label": "Right Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "right_button_url",
+            "label": "Right Button Url",
+            "default": "https://weareiw.com"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Card Section",
+            "category": "Image"
+        }
+    ]
+}
+{% endschema %}
