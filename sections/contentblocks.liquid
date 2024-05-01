@@ -1,0 +1,95 @@
+<div class="section"> 
+    <div class="content-block"> 
+        <h2 class="heading">
+            {{ section.settings.content_1_heading }}
+        </h2>
+        <img src="{{ section.settings.content_1_image }}"/>
+        <div class="content-info"> 
+            {{ section.settings.content_1_description }}
+        </div>
+        <a class="content-button" href="{{ section.settings.content_1_button_url }}" target="_blank">{{ section.settings.content_1_button_label }}</a>
+    </div>
+
+    <div class="content-block"> 
+        <h2 class="heading">
+            {{ section.settings.content_2_heading }}
+        </h2>
+        <img src="{{ section.settings.content_2_image }}"/>
+        <div class="content-info"> 
+            {{ section.settings.content_2_description }}
+        </div>
+        <a class="content-button" href="{{ section.settings.content_2_button_url }}" target="_blank">{{ section.settings.content_2_button_label }}</a>
+    </div>
+</div>
+
+{%  schema %}
+{
+    "name": "Content Blocks",
+    "settings": [
+        {
+            "type": "text",
+            "id": "content_1_heading",
+            "label": "Content #1 Heading",
+            "default": "Content #1 Heading" 
+        },
+        {
+            "type": "image_picker",
+            "id": "content_1_image",
+            "label": "Right Card Image"
+        },
+        {
+            "type": "text",
+            "id": "content_1_description",
+            "label": "Content #1 Description",
+            "default": "<p>Write your descrption here.</p>" 
+        },
+        {
+            "type": "text",
+            "id": "content_1_button_label",
+            "label": "Content #1 Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "content_1_button_url",
+            "label": "Content #1 Button Url",
+            "default": "https://weareiw.com"
+        },
+        {
+            "type": "text",
+            "id": "content_2_heading",
+            "label": "Content #2 Heading",
+            "default": "Content #2 Heading" 
+        },
+        {
+            "type": "image_picker",
+            "id": "content_2_image",
+            "label": "Content #2 Card Image"
+        },
+        {
+            "type": "text",
+            "id": "content_2_description",
+            "label": "Content #2 Description",
+            "default": "<p>Write your descrption here.</p>" 
+        },
+        {
+            "type": "text",
+            "id": "content_2_button_label",
+            "label": "Content #2 Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "content_2_button_url",
+            "label": "Content #2 Button Url",
+            "default": "https://weareiw.com"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Content blocks",
+            "category": "Image"
+        }   
+    ]
+}
+{% endschema %}

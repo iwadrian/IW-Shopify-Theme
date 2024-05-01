@@ -1,0 +1,100 @@
+<div class="home-cards setion">
+    <div class="card-row"> 
+        <div class="info-card"> 
+            <img src="{{ section.settings.left_image }}" />
+            <div class="card-content">
+                <h2 class="card-heading"> 
+                    {{ section.settings.left_title }}
+                </h2>
+                <div class="card-info"> 
+                    {{ section.settings.left_description }}
+                </div>
+                <a class="card-button" href="{{ section.settings.left_button_url }}" target="_blank">{{ section.settings.left_button_label }}</a>
+            </div>
+        </div>
+        <div class="info-card"> 
+            <img src="{{ section.settings.right_image }}" />
+            <div class="card-content">
+                <h2 class="card-heading"> 
+                    {{ section.settings.right_title }}
+                </h2>
+                <div class="card-info"> 
+                    {{ section.settings.right_description }}
+                </div>
+                <a class="card-button" href="{{ section.settings.right_button_url }}" target="_blank">{{ section.settings.right_button_label }}</a>
+            </div>
+        </div> 
+    </div>
+</div>
+
+{% schema %}
+{
+    "name": "Card Section",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "left_image",
+            "label": "Left Card Image"
+        },
+        {
+            "type": "text",
+            "id": "left_title",
+            "label": "Left Card Heading",
+            "default": "Left Heading"  
+        },
+        {
+            "type": "richtext",
+            "id": "left_description",
+            "label": "Left Card Description",
+            "default": "<p>Write your descrption here.</p>"
+        },
+        {
+            "type": "text",
+            "id": "left_button_label",
+            "label": "Left Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "left_button_url",
+            "label": "Left Button Url",
+            "default": "https://weareiw.com"
+        },
+        {
+            "type": "image_picker",
+            "id": "right_image",
+            "label": "Right Card Image"
+        },
+        {
+            "type": "text",
+            "id": "right_title",
+            "label": "Right Card Heading",
+            "default": "Right Heading"  
+        },
+        {
+            "type": "richtext",
+            "id": "right_description",
+            "label": "Right Card Description",
+            "default": "<p>Write your descrption here.</p>"
+        },
+        {
+            "type": "text",
+            "id": "right_button_label",
+            "label": "Right Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "right_button_url",
+            "label": "Right Button Url",
+            "default": "https://weareiw.com"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Card Section",
+            "category": "Image"
+        }
+    ]
+}
+{% endschema %}

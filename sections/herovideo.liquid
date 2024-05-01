@@ -1,7 +1,16 @@
-<div class="hero-video section">
+<div class="hero-video">
     <video loop="loop" autoplay="" playsinline="" muted="" id="" preload="none" style="margin: 0px; width: 1195.53px; height: 672.484px;">
-        <source type="video/mp4" src="{{ section.settings.video | default: "master" }}">  
+        <source type="video/mp4" src="{{ section.settings.video.sources[1].url | default: "master" }}">  
     </video>
+    <div class="rich-text">
+        <h2 class="heading"> 
+            {{ section.settings.title }}
+        </h2>
+        <div class="center padding-top"> 
+            {{ section.settings.text }}
+        </div>
+        <a class="home-button" href="{{ section.settings.button_url }}" target="_blank">{{ section.settings.button_label }}</a>
+    </div>
 </div>
 
 {% schema %}
@@ -12,6 +21,30 @@
             "type": "video",
             "id": "video",
             "label": "IW Technologies Hero Video"
+        },
+        {
+            "type": "text",
+            "id": "title",
+            "label": "Heading",
+            "default": "Section Heading"  
+        },
+        {
+            "type": "richtext",
+            "id": "text",
+            "label": "Description",
+            "default": "<p>Write your descrption here.</p>"
+        },
+        {
+            "type": "text",
+            "id": "button_label",
+            "label": "Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "button_url",
+            "label": "Button Url",
+            "default": "https://weareiw.com"
         }
     ],
     "presets": [

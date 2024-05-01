@@ -1,0 +1,93 @@
+<div class="section"> 
+    <div class="carousel"> 
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_1 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_2 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_3 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_4 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_5 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_6 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_7 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_8 }}"/>
+        </div>
+        <div class="logo-box">
+            <img src="{{ section.settings.logo_9 }}"/>
+        </div>
+    </div>
+</div>
+
+
+
+
+{% schema %}
+{
+    "name": "Logo Carousel",
+    "settings": [
+        {
+            "type": "image_picker",
+            "id": "logo_1",
+            "label": "Logo #1"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_2",
+            "label": "Logo #2"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_3",
+            "label": "Logo #3"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_4",
+            "label": "Logo #4"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_5",
+            "label": "Logo #5"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_6",
+            "label": "Logo #6"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_7",
+            "label": "Logo #7"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_8",
+            "label": "Logo #8"
+        },
+        {
+            "type": "image_picker",
+            "id": "logo_9",
+            "label": "Logo #9"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Logo Carousel",
+            "category": "Image"
+        }
+    ]
+}
+{% endschema %}
