@@ -1,7 +1,7 @@
 <div class="home-cards setion">
     <div class="card-row"> 
         <div class="info-card"> 
-            <img src="{{ section.settings.left_image }}" />
+            <img src="{{ 'https://cdn.shopify.com/s/files/1/0692/7381/3217/' | append: section.settings.left_image.src }}"/>
             <div class="card-content">
                 <h2 class="card-heading"> 
                     {{ section.settings.left_title }}
@@ -13,7 +13,7 @@
             </div>
         </div>
         <div class="info-card"> 
-            <img src="{{ section.settings.right_image }}" />
+            <img src="{{ 'https://cdn.shopify.com/s/files/1/0692/7381/3217/' | append: section.settings.right_image.src }}"/>
             <div class="card-content">
                 <h2 class="card-heading"> 
                     {{ section.settings.right_title }}
@@ -26,6 +26,8 @@
         </div> 
     </div>
 </div>
+
+
 
 {% schema %}
 {
