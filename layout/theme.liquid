@@ -20,6 +20,7 @@
     <script src="https://unpkg.com/vue@3"></script>
     {% comment %} <script async="true" src="https://unpkg.com/vue@3/dist/vue.global.prod.js"></script> {% endcomment %}
     {{ 'application.scss.css' | asset_url | stylesheet_tag }}
+    {% comment %} {{ 'application.css' | asset_url | stylesheet_tag }} {% endcomment %}
     {{ 'application.js' | asset_url | script_tag }}
   </head>
   <body>
