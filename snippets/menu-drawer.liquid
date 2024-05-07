@@ -17,7 +17,7 @@
   
     <div class="footer-menu">
       <ul class="secondary-menu">
-        {% for link in linklists.footer2.links %}
+        {% for link in linklists.footer.links %}
         <li>
           {% assign child_list_handle = link.title | handleize %}
           {% if linklists[child_list_handle].links != blank %}
