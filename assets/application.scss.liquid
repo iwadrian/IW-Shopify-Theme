@@ -109,6 +109,8 @@ body {
     font-weight: 700;
     font-size: 16px;
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
+    // font-family: "HelveticaNeueLTProBold", Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
     line-height: 1.25;
 }
 
@@ -763,6 +765,26 @@ footer {
     position: relative;
     transition: 0.15s;
     z-index: 999;
+
+    &:hover {
+        padding-right: 15px;
+    }
+}
+
+.cart-button:hover .cart-arrow-icon {
+    opacity: 1;
+    right: 0;
+}
+
+.cart-arrow-icon {
+    opacity: 0;
+    width: 11.5px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    right: -15px;
+    transition: 0.15s;
+    pointer-events: none;
 }
 
 .mini-cart-image-wrapper {
@@ -940,6 +962,24 @@ footer {
     &:hover {
         padding-left: 15px;
     }
+}
+
+.menu-button:hover .menu-arrow-icon {
+    opacity: 1;
+    left: 0;
+}
+
+.menu-arrow-icon {
+    transform: rotate(180deg);
+    opacity: 0;
+    width: 11.5px;
+    height: 12px;
+    position: absolute;
+    top: 5px;
+    left: -15px;
+    transition: 0.15s;
+    pointer-events: none;
+
 }
 
 /* START HERO SECTION */

@@ -1,4 +1,10 @@
-<svg width="32" height="27" viewBox="0 0 32 27" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M13.07 3.04999L2.78998 13.32L13.07 23.59" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
-<path d="M28.87 13.32H3.57996" stroke="white" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+<svg
+  id="header-arrow"
+  enable-background="new 0 0 451.111 451.111"
+  viewBox="0 0 451.111 451.111"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    d="m451.111 193.333h-322.222l112.778-112.777-48.333-48.333-193.334 193.333 193.333 193.333 48.333-48.333-112.777-112.778h322.222z"
+  />
 </svg>
