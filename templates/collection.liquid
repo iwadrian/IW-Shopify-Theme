@@ -1,5 +1,6 @@
 <div class="container">
-  <div class="collection"> 
+  <div class="collection">
+    <div class="collection-title">{{ collection.title }} </div>
     <div class="collection-list flex space-between">
       {% render 'product-card' for collection.products as product %}
     </div>
