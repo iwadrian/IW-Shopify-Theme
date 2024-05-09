@@ -4,24 +4,24 @@
             <img decoding="async" width="149" height="102" src="https://iwtech2790.wpengine.com/wp-content/uploads/21_SH_IWT_FaviconSky_RGB.png" alt="" title="21_SH_IWT_FaviconSky_RGB" class="wp-image-100">
         </div>
         <div class="footer-contact-btns">
-            <a class="foot-contact" href="https://www.weareiw.com/get-in-touch/" target="_blank">Get In Touch</a>
+            <a class="foot-contact" href="{{ section.settings.footer_button_url }}" target="_blank">{{ section.settings.footer_button_label }}</a>
             <a class="foot-privacy-policy" href="https://www.termsfeed.com/live/5300ce41-8ea3-4e06-a1dc-198dd34fd3f2" target="_blank">Privacy Policy</a>
         </div>
     </div>
     <div class="footer-box footer-box-right"> 
         <div class="footer-contact-title">
-            <p>IW Technologies</p>
+            <p>{{ section.settings.footer_title }}</p>
         </div>
         <div class="footer-contact-info"> 
-            <p>2790 Pinnacle Drive</p>
-            <p>Elgin, IL 60124-7943</p>
-            <p>Phone: (847)-310-4200</p>
-            <p>Toll Free: (800)544-5493</p>
+            <p>{{ section.settings.footer_address_street }}</p>
+            <p>{{ section.settings.footer_address_city_state }} {{ section.settings.footer_address_zipcode }}</p>
+            <p>Phone: {{ section.settings.footer_address_phone }}</p>
+            <p>Toll Free: {{ section.settings.footer_address_toll_free }}</p>
         </div>
         <div class="footer-social-icons"> 
-            <a href="https://www.linkedin.com/company/iw-technologies" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/LinkedIn.jpg" alt="" title="LinkedIn" class="wp-image-267"></a>
-            <a href="https://www.facebook.com/IWTechnologies/" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Facebook.jpg" alt="" title="Facebook" class="wp-image-266"></a>
-            <a href="https://www.youtube.com/user/illinoiswholesale/videos" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Youtube.jpg" alt="" title="Youtube" class="wp-image-265"></a>
+            <a href="{{ section.settings.footer_address_li_url }}" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/LinkedIn.jpg" alt="" title="LinkedIn" class="wp-image-267"></a>
+            <a href="{{ section.settings.footer_address_fb_url }}" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Facebook.jpg" alt="" title="Facebook" class="wp-image-266"></a>
+            <a href="{{ section.settings.footer_address_yt_url }}" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Youtube.jpg" alt="" title="Youtube" class="wp-image-265"></a>
         </div>
     </div> 
 
