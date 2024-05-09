@@ -1,0 +1,108 @@
+<footer>
+    <div class="footer-box footer-box-left">
+        <div class="footer-iw-logo"> 
+            <img decoding="async" width="149" height="102" src="https://iwtech2790.wpengine.com/wp-content/uploads/21_SH_IWT_FaviconSky_RGB.png" alt="" title="21_SH_IWT_FaviconSky_RGB" class="wp-image-100">
+        </div>
+        <div class="footer-contact-btns">
+            <a class="foot-contact" href="{{ section.settings.footer_button_url }}" target="_blank">{{ section.settings.footer_button_label }}</a>
+            <a class="foot-privacy-policy" href="https://www.termsfeed.com/live/5300ce41-8ea3-4e06-a1dc-198dd34fd3f2" target="_blank">Privacy Policy</a>
+        </div>
+    </div>
+    <div class="footer-box footer-box-right"> 
+        <div class="footer-contact-title">
+            <p>{{ section.settings.footer_title }}</p>
+        </div>
+        <div class="footer-contact-info"> 
+            <p>{{ section.settings.footer_address_street }}</p>
+            <p>{{ section.settings.footer_address_city_state }} {{ section.settings.footer_address_zipcode }}</p>
+            <p>Phone: {{ section.settings.footer_address_phone }}</p>
+            <p>Toll Free: {{ section.settings.footer_address_toll_free }}</p>
+        </div>
+        <div class="footer-social-icons"> 
+            <a href="{{ section.settings.footer_address_li_url }}" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/LinkedIn.jpg" alt="" title="LinkedIn" class="wp-image-267"></a>
+            <a href="{{ section.settings.footer_address_fb_url }}" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Facebook.jpg" alt="" title="Facebook" class="wp-image-266"></a>
+            <a href="{{ section.settings.footer_address_yt_url }}" target="_blank" class=""><img decoding="async" width="25" height="25" src="https://iwtech2790.wpengine.com/wp-content/uploads/Youtube.jpg" alt="" title="Youtube" class="wp-image-265"></a>
+        </div>
+    </div> 
+
+</footer>
+
+{% schema %}
+{
+    "name": "Footer",
+    "settings": [
+        {
+            "type": "text",
+            "id": "footer_button_label",
+            "label": "Footer Button Label",
+            "default": "Button"
+        },
+        {
+            "type": "text",
+            "id": "footer_button_url",
+            "label": "Footer Button Url",
+            "default": "https://weareiw.com"
+        },
+        {
+            "type": "text",
+            "id": "footer_title",
+            "label": "Footer Right Section Title",
+            "default": "Footer Title"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_street",
+            "label": "Address: Street",
+            "default": "1234 N. Street"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_city_state",
+            "label": "Address: City, State",
+            "default": "City, State"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_zipcode",
+            "label": "Address: Zipcode",
+            "default": "00000-0000"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_phone",
+            "label": "Address: Phone Number",
+            "default": "000-000-0000"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_toll_free",
+            "label": "Address: Toll Free Number",
+            "default": "000-000-0000"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_li_url",
+            "label": "Address: LinkedIn Url",
+            "default": "https://weareiw.com"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_fb_url",
+            "label": "Address: Facebook Url",
+            "default": "https://weareiw.com"
+        },
+        {
+            "type": "text",
+            "id": "footer_address_yt_url",
+            "label": "Address: Youtube Url",
+            "default": "https://weareiw.com"
+        }
+    ],
+    "presets": [
+        {
+            "name": "Card Section",
+            "category": "Image"
+        }
+    ]
+}
+{% endschema %}
