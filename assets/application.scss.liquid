@@ -467,6 +467,27 @@ footer {
     display: block;
 }
 
+/* HOME PAGE -- Cards Section */
+
+.card-row {
+    justify-content: space-around;
+}
+
+.info-card {
+    width: 30%;
+    margin-bottom: 32px;
+    padding: 25px;
+    background-color: #FFF;
+    box-shadow: 0 1px 4px #0006;
+    border-radius: 5px;
+    text-align: center;
+
+    @include phone{
+        width: 100%;
+    }
+}
+
+
 /* HOME PAGE -- Industry Logo Section */
 .industry .section-heading {
     font-size: 24px;
@@ -1098,10 +1119,10 @@ footer {
 
 .hero-video {
     @include phone{
-       height: 270px;
+    //    height: 270px;
 
        img, video {
-        height: 100%;
+        // height: 100%;
         object-fit: cover;
        }
     }
