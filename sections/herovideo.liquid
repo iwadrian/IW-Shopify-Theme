@@ -2,11 +2,12 @@
     <video loop="loop" autoplay="" playsinline="" muted="" id="" preload="none" style="">
         <source type="video/mp4" src="{{ section.settings.video.sources[1].url | default: "master" }}">  
     </video>
+    <div class="overlay"></div>
     <div class="rich-text">
-        <h2 class="heading"> 
+        <h2 class="heading rt-heading"> 
             {{ section.settings.title }}
         </h2>
-        <div class="center padding-top"> 
+        <div class="rt-text center padding-top"> 
             {{ section.settings.text }}
         </div>
         <a class="home-button" href="{{ section.settings.button_url }}" target="_blank">{{ section.settings.button_label }}</a>
