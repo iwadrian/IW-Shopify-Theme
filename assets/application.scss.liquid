@@ -579,7 +579,8 @@ footer {
     padding: 20px;
 }
 
-.info-card .card-info {
+.info-card .card-info,
+.content-block-section .content-info {
     font-weight: 350;
     color: #0A1258;
     font-size: 1.2rem;
@@ -639,12 +640,49 @@ footer {
     }
 }
 
+.content-block-section .heading {
+    text-align: center;
+    padding: 2.5rem 0rem;
+    font-weight: 600;
+    font-size: 1.85rem;
+}
+
+.content-block-section .heading, 
+.content-block-section .content-info {
+    color: #0A1258;
+}
+
+.content-block-section .content-info {
+    padding: 2rem 0;
+}
+
 .content-block {
     flex-direction: column;
+    padding: 25px;
 }
 
 .content-img-heading img {
     height: 250px;
+
+    @include phone{
+        height: auto;
+    }
+}
+
+.content-block .content-button{
+    width: 40%;
+    background-color: #5481F7;
+    border: 1px solid #5481F7;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.15s;
+
+    &:hover {
+        background-color: #FFF;
+        color: #5481F7;
+    }
 }
 
 
