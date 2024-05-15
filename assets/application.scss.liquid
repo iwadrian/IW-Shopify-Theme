@@ -476,7 +476,7 @@ footer {
     margin-bottom: 1rem;
 
     @include tablet{
-        height: 270px;
+        height: 400px;
     }
 }
 
@@ -487,6 +487,11 @@ footer {
     left: 0;
     object-fit: cover;
     object-position: center;
+
+    @include tablet{
+        height: 100%;
+        width: 100%;
+    }
 }
 
 .hero-video .rich-text {
@@ -516,7 +521,18 @@ footer {
     color: white;
 }
 
+.rich-text .home-button {
+    @include phone{
+        margin-top: 1rem;
+    }
+}
 
+.rich-text p {
+    @include phone{
+        font-size: 0.85rem;
+        font-weight: 600;
+    }
+}
 /* HOME PAGE -- Cards Section */
 
 .card-row {
@@ -1197,6 +1213,7 @@ footer {
     color: #FFF;
     border: 1px solid #0A1258;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     cursor: pointer;
     transition: 0.15s;
