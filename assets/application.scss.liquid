@@ -685,6 +685,30 @@ footer {
     }
 }
 
+/* HOME PAGE -- Logo Carousel Section */
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.logo-box {
+    flex: 0 0 auto;
+    width: 200px; /* Adjust as needed */
+    padding: 10px;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
 
 /* CONTACT PAGE */
 
