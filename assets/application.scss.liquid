@@ -489,13 +489,13 @@ footer {
 
 .hero-video .rich-text {
     position: absolute;
-    top: 50%;
+    top: 15%;
     left: 0;
     z-index: 2;
     display: flex;
     flex-direction: column;
 
-    @include phone{
+    @include tablet{
         top: 15%;
     }
 }
@@ -515,29 +515,53 @@ footer {
 }
 
 .rich-text .home-button {
-    @include phone{
+    margin-top: 5rem;
+
+    @include tablet{
         margin-top: 3rem;
+    }
+
+    @include desktop{
+        margin-left: 3.5rem;
     }
 }
 
 .rich-text .rt-heading {
-    font-size: 9vw;
+    font-size: 3.5rem;
     font-weight: 800;
     line-height: 1em;
+
+    @include tablet{
+        font-size: 9vw;
+    }
+
+    @include desktop{
+        padding: 0 3.5rem;
+        font-size: 4rem;
+    }
 }
 
 .rich-text .rt-text {
-    @include phone{
+    padding-top: 5rem;
+
+    @include tablet{
         padding-top: 3rem;
+    }
+
+    @include desktop{
+        padding-left: 3.5rem;
     }
 }
 
 .rich-text p {
-    @include phone{
-        font-size: 1.25rem;
-        font-weight: 500;
-        text-align: left;
-        line-height: 1.2em;
+
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.2em;
+    font-size: 1.25rem;
+
+    @include desktop{
+        font-size: 1.5rem;
     }
 }
 /* HOME PAGE -- Cards Section */
@@ -696,12 +720,13 @@ footer {
     display: flex;
     width: max-content;
     animation: scroll 20s linear infinite;
+    align-items: center;
 }
 
 .logo-box {
     flex: 0 0 auto;
-    width: 200px; /* Adjust as needed */
-    padding: 10px;
+    width: 250px; /* Adjust as needed */
+    padding: 0 1rem;
 }
 
 @keyframes scroll {
