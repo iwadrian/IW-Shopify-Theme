@@ -682,9 +682,12 @@ footer {
 /* HOME PAGE -- Content Blocks Section */
 
 .content-block-section {
+    justify-content: space-between;
     
     @include tablet{
         flex-direction: column;
+        width: 100%;
+        justify-content: center;
     }
 }
 
@@ -707,12 +710,43 @@ footer {
 .content-block {
     flex-direction: column;
     padding: 25px;
+    width: 45%;
+    height: 45%;
+
+    @include tablet{
+        width: 100%;
+    }
 }
 
-.content-img-heading img {
+.content-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.content-contentside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet{
+        flex-direction: column;
+    }
+
+}
+
+.content-info {
+    min-height: 200px;
+}
+
+.content-content img {
     height: 250px;
 
-    @include phone{
+    @include tablet{
         height: auto;
     }
 }
