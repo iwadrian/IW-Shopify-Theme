@@ -1,5 +1,6 @@
 <div class="cart-form">  
-    <template v-if="cart && cart.items.length > 0"> 
+    <template v-if="cart && cart.items.length > 0">
+
         <div class="mini-cart-rows">
             <div class="mini-cart-item" v-for="item in cart.items"> 
                 <div class="mini-cart-image-wrapper" v-if="item.image"> 
@@ -20,6 +21,7 @@
                 </div>
             </div>
         </div>
+
         <div>
             <div class="checkout-subtotal"> 
                 <p>Subtotal: </p>

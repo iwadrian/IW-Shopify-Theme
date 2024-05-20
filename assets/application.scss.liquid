@@ -1121,20 +1121,23 @@ footer {
     top: 0;
     right: 0;
     bottom: 0;
+    background-color: #0A1258;
     width: 100%;
     z-index: 99;
     max-width: 350px;
-    // background-color: #0A1258;
+    height: 100vh; /* Set a max-height */
+    overflow-y: auto; /* Make it scrollable */
     padding: 72px 25px 25px 25px;
     transition-property: transform;
+
 
     &::before {
         content: "";
         width: 100%;
-        height: 1000%;
+        height: 100%;
         // Some hacky CSS to make the full mini-cart bg colored
         position: absolute;
-        background-color: #0A1258;
+        // background-color: #0A1258;
         top: 0;
         left: 0;
         box-shadow: 0 4px 48px 36px rgba(0,0,0,0.25) !important;
@@ -1142,12 +1145,13 @@ footer {
         -moz-box-shadow: 0 4px 48px 36px rgba(0,0,0,0.25);
         transition-property: opacity;
         z-index: -1;
+        display: flex;
     }
     
     @include phone {
-        position: fixed;
         width: calc(100vw - 50px);
-        height: 500%;
+        height: 100vh; /* Set a max-height */
+        overflow-y: auto; /* Make it scrollable */
         // overflow-x: hidden;
     }
 }
@@ -1204,8 +1208,9 @@ footer {
 .mini-cart-rows {
     border-top: 1px solid #FFF;
     border-bottom: 1px solid #FFF;
+    // position: relative;
     // height: 100%;
-    // overflow: auto;
+    // overflow-y: auto;
 }
 
 .mini-cart-item {
