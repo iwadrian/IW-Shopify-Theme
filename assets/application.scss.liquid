@@ -467,6 +467,332 @@ footer {
     display: block;
 }
 
+/* START HOME PAGE*/
+
+.hero-video {
+    position: relative;
+    width: 100%;
+    height: 700px;
+    margin-bottom: 1rem;
+}
+
+
+.hero-video video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    object-position: center;
+    height: 100%;
+    width: 100%;
+}
+
+.hero-video .rich-text {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+
+    @include tablet{
+        top: 15%;
+    }
+}
+
+.hero-video .home-button {
+    width: 250px;
+}
+
+/* HOME PAGE -- Rich Text */
+
+.rich-text {
+    padding: 1rem;
+}
+
+.rt-heading, .rt-text {
+    color: white;
+}
+
+.rich-text .home-button {
+    margin-top: 5rem;
+
+    @include tablet{
+        margin-top: 3rem;
+    }
+
+    @include desktop{
+        margin-left: 3.5rem;
+    }
+}
+
+.rich-text .rt-heading {
+    font-size: 3.5rem;
+    font-weight: 800;
+    line-height: 1em;
+
+    @include tablet{
+        font-size: 9vw;
+    }
+
+    @include desktop{
+        padding: 0 3.5rem;
+        font-size: 4rem;
+    }
+}
+
+.rich-text .rt-text {
+    padding-top: 5rem;
+
+    @include tablet{
+        padding-top: 3rem;
+    }
+
+    @include desktop{
+        padding-left: 3.5rem;
+    }
+}
+
+.rich-text p {
+
+    font-weight: 500;
+    text-align: left;
+    line-height: 1.2em;
+    font-size: 1.25rem;
+
+    @include desktop{
+        font-size: 1.5rem;
+    }
+}
+/* HOME PAGE -- Cards Section */
+.home-cards {
+    padding: 2rem 0;
+}
+
+.card-row {
+    justify-content: space-around;
+
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.info-card {
+    width: 37%;
+    margin-bottom: 32px;
+    background-color: #FFF;
+    box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.2);
+    text-align: center;
+    height: auto;
+
+    @include tablet{
+        width: 85%;
+    }
+}
+
+.info-card .card-content {
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.info-card .card-heading {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #0A1258;
+    line-height: 1.2em;
+    text-align: left;
+    padding: 20px;
+}
+
+.info-card .card-info,
+.content-block-section .content-info {
+    font-weight: 350;
+    color: #0A1258;
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    text-align: left;
+    padding: 0 20px 20px 20px;
+}
+
+.info-card .card-button {
+    padding: 1rem 2rem;
+    background-color: #5481F7;
+    color: #FFF;
+    border: 1px solid #5481F7;
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: 0.15s;
+
+    &:hover {
+        background-color: #FFF;
+        color: #5481F7;
+    }
+
+}
+
+
+/* HOME PAGE -- Industry Logo Section */
+
+.industry .section-heading {
+    font-size: 2.5rem;
+    font-weight: 800;
+    text-align: center;
+    margin: 3rem 0rem 3.5rem;
+    line-height: 1em;
+    color: #0A1258;
+}
+
+.industry-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.industry-logos {
+    justify-content: space-between;
+    width: 45%;
+
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
+
+.industry-icon {
+    width: 15%;
+
+    @include tablet{
+        width: 25%;
+    }
+}
+
+/* HOME PAGE -- Content Blocks Section */
+
+.content-block-section {
+    justify-content: space-between;
+    
+    @include tablet{
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.content-block-section .heading {
+    text-align: center;
+    padding: 2.5rem 0rem;
+    font-weight: 600;
+    font-size: 1.85rem;
+}
+
+.content-block-section .heading, 
+.content-block-section .content-info {
+    color: #0A1258;
+}
+
+.content-block-section .content-info {
+    padding: 2rem 0;
+}
+
+.content-block {
+    flex-direction: column;
+    padding: 25px;
+    width: 45%;
+    height: 45%;
+
+    @include tablet{
+        width: 100%;
+    }
+}
+
+.content-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet{
+        flex-direction: column;
+    }
+}
+
+.content-contentside {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @include tablet{
+        flex-direction: column;
+    }
+
+}
+
+.content-info {
+    min-height: 200px;
+}
+
+.content-content img {
+    height: 250px;
+
+    @include tablet{
+        height: auto;
+    }
+}
+
+.content-block .content-button{
+    width: 40%;
+    background-color: #5481F7;
+    border: 1px solid #5481F7;
+    color: #FFF;
+    text-align: center;
+    padding: 1rem;
+    cursor: pointer;
+    transition: 0.15s;
+
+    &:hover {
+        background-color: #FFF;
+        color: #5481F7;
+    }
+}
+
+/* HOME PAGE -- Logo Carousel Section */
+
+.carousel {
+    width: 100%;
+    overflow: hidden;
+}
+
+.carousel-inner {
+    display: flex;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+    align-items: center;
+}
+
+.logo-box {
+    flex: 0 0 auto;
+    width: 250px; /* Adjust as needed */
+    padding: 0 1rem;
+}
+
+@keyframes scroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+}
+
+
 /* CONTACT PAGE */
 
 .contact-form-title {
@@ -488,8 +814,6 @@ footer {
         min-width: 19rem;
     }
 }
-
-// 19 rem when mobile
 
 .contact-form-title h3 {
     color: #FFF;
@@ -1066,10 +1390,10 @@ footer {
 
 .hero-video {
     @include phone{
-       height: 270px;
+    // height: 270px;
 
        img, video {
-        height: 100%;
+        // height: 100%;
         object-fit: cover;
        }
     }
@@ -1090,11 +1414,12 @@ footer {
 }
 
 .home-button {
-    padding: 10px 20px;
+    padding: 25px 25px;
     background-color: #0A1258;
     color: #FFF;
     border: 1px solid #0A1258;
     text-transform: uppercase;
+    text-align: center;
     font-weight: 700;
     cursor: pointer;
     transition: 0.15s;

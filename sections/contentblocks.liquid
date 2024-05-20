@@ -1,24 +1,37 @@
-<div class="section"> 
-    <div class="content-block"> 
-        <h2 class="heading">
-            {{ section.settings.content_1_heading }}
-        </h2>
-        <img src="{{ 'https://cdn.shopify.com/s/files/1/0692/7381/3217/' | append: section.settings.content_1_image.src }}"/>
-        <div class="content-info"> 
-            {{ section.settings.content_1_description }}
+<div class="section">
+    <div class="content-block-section flex"> 
+        <div class="content-block flex"> 
+            <div class="content-heading">
+                <h2 class="heading">
+                    {{ section.settings.content_1_heading }}
+                </h2>
+            </div>
+            <div class="content-content flex">
+                <img src="{{ 'https://cdn.shopify.com/s/files/1/0692/7381/3217/' | append: section.settings.content_1_image.src }}"/>
+                <div class="content-contentside">
+                    <div class="content-info"> 
+                    {{ section.settings.content_1_description }}
+                    </div>
+                    <a class="content-button" href="{{ section.settings.content_1_button_url }}" target="_blank">{{ section.settings.content_1_button_label }}</a>
+                </div>
+            </div>
         </div>
-        <a class="content-button" href="{{ section.settings.content_1_button_url }}" target="_blank">{{ section.settings.content_1_button_label }}</a>
-    </div>
-
-    <div class="content-block"> 
-        <h2 class="heading">
-            {{ section.settings.content_2_heading }}
-        </h2>
-        <img src="{{ 'https://cdn.shopify.com/s/files/1/0692/7381/3217/' | append: section.settings.content_2_image.src }}"/>
-        <div class="content-info"> 
-            {{ section.settings.content_2_description }}
+        <div class="content-block flex"> 
+            <div class="content-heading">
+                <h2 class="heading">
+                    {{ section.settings.content_2_heading }}
+                </h2>
+            </div>
+            <div class="content-content flex">
+                <img src="{{ 'https://cdn.shopify.com/s/files/1/0692/7381/3217/' | append: section.settings.content_2_image.src }}"/>
+                <div class="content-contentside">
+                    <div class="content-info"> 
+                        {{ section.settings.content_2_description }}
+                    </div>
+                    <a class="content-button" href="{{ section.settings.content_2_button_url }}" target="_blank">{{ section.settings.content_2_button_label }}</a>
+                </div>
+            </div>
         </div>
-        <a class="content-button" href="{{ section.settings.content_2_button_url }}" target="_blank">{{ section.settings.content_2_button_label }}</a>
     </div>
 </div>
 
