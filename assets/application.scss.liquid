@@ -565,24 +565,28 @@ footer {
     }
 }
 /* HOME PAGE -- Cards Section */
+.home-cards {
+    padding: 2rem 0;
+}
 
 .card-row {
     justify-content: space-around;
 
-    @include phone{
+    @include tablet{
         flex-direction: column;
         align-items: center;
     }
 }
 
 .info-card {
-    width: 45%;
+    width: 37%;
     margin-bottom: 32px;
     background-color: #FFF;
     box-shadow: 0px 2px 18px 0px rgba(0,0,0,0.2);
     text-align: center;
+    height: auto;
 
-    @include phone{
+    @include tablet{
         width: 85%;
     }
 }
