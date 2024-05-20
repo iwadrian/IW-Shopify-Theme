@@ -637,6 +637,7 @@ footer {
 
 
 /* HOME PAGE -- Industry Logo Section */
+
 .industry .section-heading {
     font-size: 2.5rem;
     font-weight: 800;
@@ -647,14 +648,33 @@ footer {
 }
 
 .industry-row {
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
     justify-content: space-between;
+
+
+    @include tablet{
+        flex-direction: column;
+        align-items: center;
+    }
 }
+
+.industry-logos {
+    justify-content: space-between;
+    width: 45%;
+
+    @include tablet {
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+}
+
 
 .industry-icon {
     width: 15%;
 
-    @include phone{
+    @include tablet{
         width: 25%;
     }
 }
