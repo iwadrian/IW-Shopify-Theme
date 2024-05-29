@@ -378,11 +378,25 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+.test-class {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 /* START PRODUCT CARD */
 .product-card {
-    width: calc((100% - 25px * 2) / 3);
+    width: calc((100% - 25px * 2) / 4);
     margin-bottom: 32px;
     height: 100%;
+
+    @include desktop{
+        width: calc((100% - 25px) / 5);
+    }
+
+    @include tablet{
+        width: calc((100% - 25px) / 3);
+    }
 
     @include phone{
         width: 100%;
@@ -435,7 +449,7 @@ footer {
 .swiper-button-prev, .swiper-button-next {
     position: absolute;
     top: 0;
-    width: 35%;
+    width: 25%;
     height: 100%;
     margin-top: 0;
     outline-style: none;
@@ -649,7 +663,7 @@ footer {
 
 .info-card .card-heading {
     font-weight: 600;
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #0A1258;
     line-height: 1.2em;
     text-align: left;
@@ -673,7 +687,7 @@ footer {
     border: 1px solid #5481F7;
     text-align: center;
     font-weight: 700;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     cursor: pointer;
     transition: 0.15s;
 
@@ -1457,6 +1471,7 @@ footer {
 /* START HERO SECTION */
 
 .hero-video {
+    position: relative;
     @include phone{
     // height: 270px;
 
@@ -1465,6 +1480,21 @@ footer {
         object-fit: cover;
        }
     }
+}
+
+.overlay {
+    position: absolute; /* Positions the overlay relative to the hero-video */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Change this to the color and opacity you want */
+    z-index: 1; /* Ensures the overlay is above the video but below the rich-text */
+}
+
+.rich-text {
+    position: relative; /* Ensures the rich-text is above the overlay */
+    z-index: 2;
 }
 
 /* START VIDEO SECTION */
