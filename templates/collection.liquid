@@ -1,7 +1,7 @@
 <div class="container">
   <div class="collection">
     <div class="collection-title">{{ collection.title }} </div>
-    <div class="collection-list flex {% if collection.products.size <= 3 %}test-class{% else %}space-between{% endif %}">
+    <div class="collection-list flex {% if collection.products.size <= 3 %}collection-small{% else %}space-between{% endif %}">
       {% render 'product-card' for collection.products as product %}
     </div>
   </div>
