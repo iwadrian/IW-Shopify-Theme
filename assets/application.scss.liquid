@@ -378,11 +378,25 @@ footer {
     -webkit-text-fill-color: transparent;
 }
 
+.test-class {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 /* START PRODUCT CARD */
 .product-card {
-    width: calc((100% - 25px * 2) / 3);
+    width: calc((100% - 25px * 2) / 4);
     margin-bottom: 32px;
     height: 100%;
+
+    @include desktop{
+        width: calc((100% - 25px) / 5);
+    }
+
+    @include tablet{
+        width: calc((100% - 25px) / 3);
+    }
 
     @include phone{
         width: 100%;
