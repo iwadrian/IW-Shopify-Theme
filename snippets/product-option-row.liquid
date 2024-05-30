@@ -23,7 +23,17 @@
                     form.selections[i] = value;
                 "
             >
-                ${ value }
+                <span> ${ value } </span>
+                <img v-if="value === 'Powered USB'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-usb.png">
+                <img v-if="value === 'Parallel'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-parallel.png">
+                <img v-if="value === 'Ethernet UB-E03'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-ethernet-usb-e03.png">
+                <img v-if="value === 'Ethernet UB-E04'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-ethernet-usb-e04.png">
+                <img v-if="value === 'MICROS IDN'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-micros-idn.png">
+                <img v-if="value === 'RS232 & USB'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-usb.png">
+                <img v-if="value === 'RS232 & USB'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-rs232.png">
+                <img v-if="value === 'RS232'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-rs232.png">
+                <img v-if="value === 'USB & Ethernet w/ Empty Slot'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-usb.png">
+                <img v-if="value === 'USB & Ethernet w/ Empty Slot'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-ethernet-usb-e03.png">
             </div>
         </template>
     </div>
