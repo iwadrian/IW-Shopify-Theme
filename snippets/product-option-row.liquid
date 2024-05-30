@@ -1,7 +1,15 @@
-<div class="product-option-row">
+<div class="product-option-row" >
 
     <div class="product-option-label" @click="option.visible = !option.visible" :class="{ labelActive: option.visible }">
         ${ option.name }: <span> ${ selected[i] }</span>
+        <img v-if="option.name === 'Interface' && selected[i] === 'Powered USB'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-usb.png">
+        <img v-if="option.name === 'Interface' && selected[i] === 'Parallel'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-parallel.png">
+        <img v-if="option.name === 'Interface' && selected[i] === 'Ethernet UB-E03'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-ethernet-usb-e03.png">
+        <img v-if="option.name === 'Interface' && selected[i] === 'Ethernet UB-E04'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-ethernet-usb-e04.png">
+        <img v-if="option.name === 'Interface' && selected[i] === 'MICROS IDN'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-micros-idn.png">
+        <img v-if="option.name === 'Interface' && selected[i] === 'RS232 & USB'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-usb.png">
+        <img v-if="option.name === 'Interface' && selected[i] === 'RS232 & USB'" src="https://shop.weareiw.com/cdn/shop/t/2/assets/interface-rs232.png">
+
     </div>
     <div class="product-option-list" v-if="option.visible">
         <template v-for="(value, index) in option.values">
